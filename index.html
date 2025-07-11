@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Aline Al Hakim - E-Portfolio</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
     header, footer { background: #222; color: white; text-align: center; padding: 40px 10px; }
     section { padding: 30px 20px; max-width: 1000px; margin: auto; }
     h1, h2, h3 { color: #444; }
@@ -27,7 +27,7 @@
 
   <section>
     <h2>About Me</h2>
-    <p>I’m a third-year Computer and Communication Networks Engineering student. I specialize in C, C++, and OOP. I enjoy solving real-world problems with technology and built GoTogether, a carpooling platform for Lebanon. I’ve trained at Ogero and worked on robotics projects, combining both hardware and software skills.</p>
+    <p>I’m a third-year Computer and Communication Networks Engineering student. I specialize in C, C++, OOP and full-stack development. I created GoTogether, a carpooling app for Lebanon. I also completed internships with Ogero and participated in robotics projects.</p>
   </section>
 
   <section class="light-section">
@@ -47,43 +47,36 @@
     <h2>Major Project – GoTogether App</h2>
     <div class="card">
       <h3>Overview</h3>
-      <p><strong>GoTogether</strong> is a full-stack carpooling application developed using Flutter, .NET Core, and SQL Server. It helps passengers and drivers find shared rides efficiently in Lebanon.</p>
+      <p>GoTogether is a ride-sharing mobile app designed to connect drivers and passengers in Lebanon. It aims to reduce traffic, save fuel, and improve transportation reliability.</p>
+      <p><strong>Stack:</strong> Flutter (Frontend), .NET Core (Backend), SQL Server (Database)</p>
 
-      <h3>Features</h3>
+      <h3>Key Features</h3>
       <ul>
-        <li>User registration and login</li>
-        <li>Posting and searching for rides</li>
-        <li>Booking a ride</li>
-        <li>Live ride tracking and status</li>
-        <li>Driver/passenger reviews</li>
-      </ul>
-
-      <h3>Technologies Used</h3>
-      <ul>
-        <li>Frontend: Flutter</li>
-        <li>Backend: .NET Core Web API</li>
-        <li>Database: SQL Server</li>
+        <li>User authentication and roles (driver/passenger)</li>
+        <li>Search, offer, and book rides</li>
+        <li>Live tracking and ride status</li>
+        <li>Ratings and reviews</li>
       </ul>
 
       <h3>Database Tables</h3>
       <ul>
-        <li><strong>Users:</strong> ID, Name, Email, Password, Role</li>
-        <li><strong>Rides:</strong> ID, DriverID, Origin, Destination, Date, Time, Seats</li>
-        <li><strong>Bookings:</strong> ID, RideID, UserID, Status</li>
-        <li><strong>Reviews:</strong> ID, FromUserID, ToUserID, Rating, Comment</li>
+        <li>Users (ID, Name, Role, Email)</li>
+        <li>Rides (From, To, Date, Seats)</li>
+        <li>Bookings (UserID, RideID)</li>
+        <li>Ratings (FromUserID, ToUserID, Score)</li>
       </ul>
     </div>
   </section>
 
   <section class="light-section">
-    <h2>Trainings & Internships</h2>
+    <h2>Trainings</h2>
     <div class="card">
       <h3>Ogero Internship</h3>
-      <p>Completed a professional internship at Ogero. Learned about fiber optics, routers, network setups, and telecom infrastructure.</p>
+      <p>Worked on fiber optics, telecom setup, and router configuration. Gained hands-on experience in Lebanon’s telecom infrastructure.</p>
     </div>
     <div class="card">
-      <h3>Robotics Training</h3>
-      <p>Built basic robots using Arduino, sensors, and motors. Learned embedded programming and automation control systems.</p>
+      <h3>Robotics</h3>
+      <p>Built Arduino-based robots, used sensors and motors, and programmed basic automated tasks for obstacle avoidance and motion.</p>
     </div>
   </section>
 
@@ -92,64 +85,58 @@
 
     <div class="card">
       <h3>📄 CV (Résumé)</h3>
+      <p><strong>Name:</strong> Aline Al Hakim</p>
+      <p><strong>Education:</strong> Computer & Communication Networks Engineering – CCNE (Expected 2026)</p>
+      <p><strong>Skills:</strong> C, C++, OOP, Flutter, .NET Core, SQL Server, GitHub</p>
+      <p><strong>Projects:</strong> GoTogether App (Ride Sharing Platform)</p>
+      <p><strong>Trainings:</strong> Ogero Internship, Robotics</p>
+      <p><strong>Languages:</strong> English, Arabic, Basic French</p>
+      <p><strong>Contact:</strong> alinehakim0@gmail.com | +961 81081560</p>
+    </div>
+
+    <div class="card">
+      <h3>📘 Technical Report – GoTogether</h3>
+      <p><strong>Problem:</strong> Public transport in Lebanon is unreliable. Many people use private cars but can't afford fuel alone.</p>
+      <p><strong>Solution:</strong> A mobile app to offer and find carpooling rides in real time.</p>
+      <p><strong>System:</strong> Cross-platform app (Flutter), .NET Core REST API, SQL Server database.</p>
+      <p><strong>Development Steps:</strong></p>
       <ul>
-        <li><strong>Name:</strong> Aline Al Hakim</li>
-        <li><strong>Education:</strong> CCNE – Expected 2026</li>
-        <li><strong>Skills:</strong> C, C++, OOP, Flutter, .NET, SQL</li>
-        <li><strong>Trainings:</strong> Ogero Internship, Robotics</li>
-        <li><strong>Project:</strong> GoTogether App</li>
-        <li><strong>Languages:</strong> English, Arabic, Basic French</li>
-        <li><strong>Contact:</strong> alinehakim0@gmail.com | +961 81081560</li>
+        <li>System planning and user flow diagrams</li>
+        <li>Database schema design</li>
+        <li>RESTful API backend implementation</li>
+        <li>Flutter frontend UI with booking functionality</li>
+        <li>Testing, debugging, future upgrades planning</li>
+      </ul>
+      <p><strong>Future Features:</strong> Payments, in-app chat, driver tracking</p>
+    </div>
+
+    <div class="card">
+      <h3>🗣️ Interview Questions</h3>
+      <ul>
+        <li><strong>Q:</strong> Tell me about your main project?<br><strong>A:</strong> GoTogether is a mobile carpooling platform using Flutter and .NET API to connect drivers and passengers efficiently in Lebanon.</li>
+        <li><strong>Q:</strong> What is OOP?<br><strong>A:</strong> Object-Oriented Programming is a concept where software is built using objects and classes, supporting inheritance, encapsulation, abstraction, and polymorphism.</li>
+        <li><strong>Q:</strong> What is a foreign key in SQL?<br><strong>A:</strong> It’s a field that creates a relationship between two tables.</li>
+        <li><strong>Q:</strong> Explain DHCP and DNS?<br><strong>A:</strong> DHCP assigns IP addresses to devices. DNS translates domain names into IP addresses.</li>
       </ul>
     </div>
 
     <div class="card">
-      <h3>📘 Technical Report – GoTogether App</h3>
-      <p><strong>Title:</strong> GoTogether: Smart Carpooling for Lebanon</p>
-      <p><strong>Objective:</strong> To reduce traffic and improve transport by connecting drivers and passengers via a mobile platform.</p>
-      <p><strong>System Architecture:</strong></p>
-      <ul>
-        <li>Frontend: Flutter</li>
-        <li>Backend: .NET Core REST API</li>
-        <li>Database: SQL Server</li>
-      </ul>
-      <p><strong>Development Process:</strong></p>
-      <ul>
-        <li>Planning: Defined problem and user roles</li>
-        <li>Design: Database schema and UI wireframes</li>
-        <li>Implementation: API endpoints + Flutter screens</li>
-        <li>Testing: Manual and integration testing</li>
-        <li>Deployment: Hosted on local dev server</li>
-      </ul>
-      <p><strong>Conclusion:</strong> The app is a scalable solution to everyday commuting issues. Future updates include payment and chat systems.</p>
+      <h3>📊 Presentation Slides</h3>
+      <ol>
+        <li><strong>Slide 1:</strong> GoTogether – Carpooling App</li>
+        <li><strong>Slide 2:</strong> Problem – Transport inefficiency in Lebanon</li>
+        <li><strong>Slide 3:</strong> Our Solution – Mobile Ride Sharing Platform</li>
+        <li><strong>Slide 4:</strong> Tech Stack – Flutter + .NET + SQL</li>
+        <li><strong>Slide 5:</strong> Key Features – Offer/Book Rides, Ratings</li>
+        <li><strong>Slide 6:</strong> System Architecture – Frontend, API, Database</li>
+        <li><strong>Slide 7:</strong> Future Work – Chat, Payments, Map API</li>
+      </ol>
     </div>
 
-    <div class="card">
-      <h3>🎤 Interview Q&A (Mock)</h3>
-      <ul>
-        <li><strong>Q: Describe your GoTogether project.</strong><br>A: A carpooling app for Lebanon built using Flutter and .NET Core to connect drivers and passengers efficiently.</li>
-        <li><strong>Q: What is OOP?</strong><br>A: Object-Oriented Programming is a paradigm based on classes and objects. It supports abstraction, encapsulation, inheritance, and polymorphism.</li>
-        <li><strong>Q: What is a foreign key in SQL?</strong><br>A: A foreign key is a column that creates a relationship between two tables.</li>
-        <li><strong>Q: What is DHCP?</strong><br>A: DHCP (Dynamic Host Configuration Protocol) automatically assigns IP addresses to devices on a network.</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>📽️ Presentation Slides Content</h3>
-      <ul>
-        <li><strong>Slide 1:</strong> Title – GoTogether App</li>
-        <li><strong>Slide 2:</strong> Problem – No transport options</li>
-        <li><strong>Slide 3:</strong> Solution – Carpooling App</li>
-        <li><strong>Slide 4:</strong> Tech – Flutter + .NET Core + SQL</li>
-        <li><strong>Slide 5:</strong> App Features – Book, Track, Review</li>
-        <li><strong>Slide 6:</strong> Architecture Diagram</li>
-        <li><strong>Slide 7:</strong> Conclusion – Future ideas & Q&A</li>
-      </ul>
-    </div>
   </section>
 
   <footer>
-    <p>© 2025 Aline Al Hakim | All rights reserved</p>
+    <p>© 2025 Aline Al Hakim – CCNE Portfolio</p>
   </footer>
 
 </body>
